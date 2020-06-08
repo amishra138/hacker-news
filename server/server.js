@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3003;
 const app = express();
 
 app.get("/*", (req, res, next) => {
-  fs.readFile(path.resolve("./build/index.html"), "utf8", (err, data) => {
+  fs.readFile(path.resolve("./public/index.html"), "utf8", (err, data) => {
     if (err) {
       console.log("Something went wrong:", err);
       return res.status(500).send("Something went wrong!");
