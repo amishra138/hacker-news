@@ -1,4 +1,4 @@
-import "ignore-styles";
+require("ignore-styles");
 
 // eslint-disable-next-line no-undef
 require("@babel/register")({
@@ -6,4 +6,4 @@ require("@babel/register")({
   presets: ["@babel/preset-env", "@babel/preset-react"],
 });
 
-import "./server";
+require("./server");
